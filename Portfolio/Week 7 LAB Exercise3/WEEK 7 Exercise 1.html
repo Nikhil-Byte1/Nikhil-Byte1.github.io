@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .form-container {
+            width: 40%;
+            margin: 10px auto;
+            border: 2px solid black;
+            padding: 8px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <p align="left" style="font-size: xx-large;">
+            Search our web site!
+        </p>
+        <hr width="100%" color="black">
+        <p align="left">
+            Where do you want to search?
+        </p>
+        <form name="form1" action="url" method="get" align="left">
+            <input type="radio" id="1" name="web" checked> Whole site<br>
+            <input type="radio" id="2" name="web"> Business Partners Section<br>
+            <input type="radio" id="3" name="web"> Corporate Communications Section<br>
+            <input type="radio" id="4" name="web"> Lotus Education Section<br>
+        </form>  
+
+        <p align="left">
+            Enter a word or two that we can search on:
+        </p>
+        <form name="form3" action="url" method="get" align="left">
+            <table>
+                <tr>
+                    <td><input type="text" style="margin-top: -5cm; width: 450px;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
