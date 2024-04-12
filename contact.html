@@ -52,9 +52,12 @@
                 var name = document.getElementById('name').value;
                 var email = document.getElementById('email').value;
                 var message = document.getElementById('message').value;
-    
-                alert('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
-    
+        
+                if (name === '' || email === '') {
+                    alert('Please enter your name and email.');
+                } else {
+                    alert('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
+                }
             });
         </script>
 
